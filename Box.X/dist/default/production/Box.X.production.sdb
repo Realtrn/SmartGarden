@@ -1,0 +1,275 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"6 E:\MPLAB x IDE\Box.X\adc.c
+[v _init_ADC init_ADC `(v  1 e 1 0 ]
+"27
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"12 E:\MPLAB x IDE\Box.X\lcd.c
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+"34
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"44
+[v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
+"50
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+"71
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+"90
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+"106
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+"22 E:\MPLAB x IDE\Box.X\newmain.c
+[v _Servocontrol Servocontrol `(v  1 e 1 0 ]
+"40
+[v _main main `(v  1 e 1 0 ]
+"9 E:\MPLAB x IDE\Box.X\pwm.c
+[v _init_PWM init_PWM `(v  1 e 1 0 ]
+"27
+[v _setPWM_DutyCycle setPWM_DutyCycle `(v  1 e 1 0 ]
+"8 E:\MPLAB x IDE\Box.X\servo.c
+[v _tsDelay tsDelay `(v  1 e 1 0 ]
+"15
+[v _tsSetPulse tsSetPulse `(v  1 e 1 0 ]
+"892 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+"1152
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1437
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1816
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2288
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"2295
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+[s S170 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"2331
+[u S177 . 1 `S170 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES177  1 e 1 @396 ]
+"2361
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"2383
+[v _ADCS0 ADCS0 `VEb  1 e 0 @254 ]
+"2386
+[v _ADCS1 ADCS1 `VEb  1 e 0 @255 ]
+"2389
+[v _ADCS2 ADCS2 `VEb  1 e 0 @1278 ]
+"2395
+[v _ADFM ADFM `VEb  1 e 0 @1279 ]
+"2404
+[v _ADON ADON `VEb  1 e 0 @248 ]
+"2446
+[v _CCP1M2 CCP1M2 `VEb  1 e 0 @186 ]
+"2449
+[v _CCP1M3 CCP1M3 `VEb  1 e 0 @187 ]
+"2452
+[v _CCP1X CCP1X `VEb  1 e 0 @189 ]
+"2455
+[v _CCP1Y CCP1Y `VEb  1 e 0 @188 ]
+"2482
+[v _CHS0 CHS0 `VEb  1 e 0 @251 ]
+"2485
+[v _CHS1 CHS1 `VEb  1 e 0 @252 ]
+"2488
+[v _CHS2 CHS2 `VEb  1 e 0 @253 ]
+"2560
+[v _EEPGD EEPGD `VEb  1 e 0 @3175 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2575
+[v _GO_DONE GO_DONE `VEb  1 e 0 @250 ]
+"2617
+[v _PCFG0 PCFG0 `VEb  1 e 0 @1272 ]
+"2620
+[v _PCFG1 PCFG1 `VEb  1 e 0 @1273 ]
+"2623
+[v _PCFG2 PCFG2 `VEb  1 e 0 @1274 ]
+"2626
+[v _PCFG3 PCFG3 `VEb  1 e 0 @1275 ]
+"2677
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2680
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"2683
+[v _RB3 RB3 `VEb  1 e 0 @51 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2764
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2767
+[v _RD6 RD6 `VEb  1 e 0 @70 ]
+"2770
+[v _RD7 RD7 `VEb  1 e 0 @71 ]
+"2872
+[v _T2CKPS0 T2CKPS0 `VEb  1 e 0 @144 ]
+"2875
+[v _T2CKPS1 T2CKPS1 `VEb  1 e 0 @145 ]
+"2902
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"2965
+[v _TRISC2 TRISC2 `VEb  1 e 0 @1082 ]
+"3046
+[v _WR WR `VEb  1 e 0 @3169 ]
+"40 E:\MPLAB x IDE\Box.X\newmain.c
+[v _main main `(v  1 e 1 0 ]
+{
+"52
+} 0
+"27 E:\MPLAB x IDE\Box.X\pwm.c
+[v _setPWM_DutyCycle setPWM_DutyCycle `(v  1 e 1 0 ]
+{
+[v setPWM_DutyCycle@DC DC `ui  1 p 2 6 ]
+"35
+} 0
+"9
+[v _init_PWM init_PWM `(v  1 e 1 0 ]
+{
+"25
+} 0
+"6 E:\MPLAB x IDE\Box.X\adc.c
+[v _init_ADC init_ADC `(v  1 e 1 0 ]
+{
+"25
+} 0
+"22 E:\MPLAB x IDE\Box.X\newmain.c
+[v _Servocontrol Servocontrol `(v  1 e 1 0 ]
+{
+"38
+} 0
+"15 E:\MPLAB x IDE\Box.X\servo.c
+[v _tsSetPulse tsSetPulse `(v  1 e 1 0 ]
+{
+[v tsSetPulse@p1 p1 `i  1 p 2 2 ]
+[v tsSetPulse@p2 p2 `i  1 p 2 4 ]
+[v tsSetPulse@freq freq `i  1 p 2 6 ]
+"24
+} 0
+"8
+[v _tsDelay tsDelay `(v  1 e 1 0 ]
+{
+"10
+[v tsDelay@delay delay `i  1 a 2 0 ]
+"8
+[v tsDelay@d d `i  1 p 2 9 ]
+"13
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"106 E:\MPLAB x IDE\Box.X\lcd.c
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+{
+[v Lcd_Write_String@a a `*.24uc  1 a 1 wreg ]
+"108
+[v Lcd_Write_String@i i `i  1 a 2 5 ]
+"106
+[v Lcd_Write_String@a a `*.24uc  1 a 1 wreg ]
+"109
+[v Lcd_Write_String@a a `*.24uc  1 a 1 7 ]
+"111
+} 0
+"90
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+{
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"92
+[v Lcd_Write_Char@y y `uc  1 a 1 3 ]
+[v Lcd_Write_Char@temp temp `uc  1 a 1 2 ]
+"90
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"93
+[v Lcd_Write_Char@a a `uc  1 a 1 4 ]
+"104
+} 0
+"50
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+"52
+[v Lcd_Set_Cursor@temp temp `uc  1 a 1 10 ]
+[v Lcd_Set_Cursor@y y `uc  1 a 1 9 ]
+[v Lcd_Set_Cursor@z z `uc  1 a 1 8 ]
+"50
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+[v Lcd_Set_Cursor@b b `uc  1 p 1 4 ]
+"53
+[v Lcd_Set_Cursor@a a `uc  1 a 1 7 ]
+"69
+} 0
+"44
+[v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
+{
+"48
+} 0
+"27 E:\MPLAB x IDE\Box.X\adc.c
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+{
+[v ADC_Read@ADC_channel ADC_channel `uc  1 a 1 wreg ]
+"47
+[v ADC_Read@result result `ui  1 a 2 3 ]
+"27
+[v ADC_Read@ADC_channel ADC_channel `uc  1 a 1 wreg ]
+"29
+[v ADC_Read@ADC_channel ADC_channel `uc  1 a 1 5 ]
+"49
+} 0
+"71 E:\MPLAB x IDE\Box.X\lcd.c
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"88
+} 0
+"34
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+"36
+[v Lcd_Cmd@a a `uc  1 a 1 3 ]
+"42
+} 0
+"12
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+{
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+"14
+[v Lcd_Port@a a `uc  1 a 1 0 ]
+"33
+} 0
